@@ -62,7 +62,7 @@ shinyServer(function(input, output) {
                       ylab = "P (word | topic)",
                       xlab = "",
                       names =  paste("Topic", 1:input$topic_count),
-                      xlim = c(0,input$topic_count*1.75),
+                      xlim = c(0,input$topic_count*1.7),
                       width = 1)
                       
   legend("bottomright", 

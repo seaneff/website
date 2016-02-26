@@ -35,7 +35,7 @@ shinyUI(fluidPage(
             
         sliderInput("a1", 
                     HTML(paste("𝝰", tags$sub(1), sep = "")), 
-                    value = 1,
+                    value = 0.05,
                     min = .01, 
                     max = 5),
       
@@ -44,7 +44,7 @@ shinyUI(fluidPage(
         condition = "input.topic_count > 1",
         sliderInput("a2", 
                     HTML(paste("𝝰", tags$sub(2), sep = "")), 
-                    value = 1,
+                    value = 0.05,
                     min = .01, 
                     max = 5)
       ),
@@ -53,7 +53,7 @@ shinyUI(fluidPage(
         condition = "input.topic_count > 2",
         sliderInput("a3", 
                    HTML(paste("𝝰", tags$sub(3), sep = "")), 
-                    value = 1,
+                    value = 0.05,
                     min = .01, 
                     max = 5)
       ),
@@ -62,7 +62,7 @@ shinyUI(fluidPage(
         condition = "input.topic_count > 3",
         sliderInput("a4", 
                     HTML(paste("𝝰", tags$sub(4), sep = "")), 
-                    value = 1,
+                    value = 0.05,
                     min = .01, 
                     max = 5)
       ),
@@ -71,7 +71,7 @@ shinyUI(fluidPage(
         condition = "input.topic_count > 4",
         sliderInput("a5", 
                     HTML(paste("𝝰", tags$sub(5), sep = "")), 
-                    value = 1,
+                    value = 0.05,
                     min = .01, 
                     max = 5)
       ),
@@ -128,11 +128,11 @@ shinyUI(fluidPage(
       tabsetPanel(type = "tabs", 
                   tabPanel("Beta/Theta", 
                            fluidRow(
-                             column(width = 12,
-                                    height = 5,
+                             column(width = 10,
+                                    height = 6,
                                     plotOutput("beta_bar")),
-                             column(width = 12, 
-                                    heighth = 5,
+                             column(width = 10, 
+                                    height = 6,
                                     plotOutput("theta_bar")))),
                   tabPanel("Example: Document 1 // Topic 1",
                            fluidRow(
