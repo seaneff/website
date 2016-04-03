@@ -1,0 +1,9 @@
+
+## R history files
+.Rhistory
+.RData
+.Rapp.history
+
+## Shiny things 
+rsconnect/ 
+*.dcf
